@@ -117,7 +117,7 @@ namespace ET
         {
             this.allTypes.Clear();
 			
-			 allType.AddRange(addTypes);
+		
             foreach (Type addType in addTypes)
             {
                 this.allTypes[addType.FullName] = addType;

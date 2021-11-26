@@ -58,10 +58,10 @@ Log.Error("加载config");
 			self.ConfigLoader.GetAllConfigBytes(configBytes);
             
 //#if !NOT_UNITY
-			async ETTask Load1(Type configType, Dictionary<string, byte[]> configBytes)
+			async ETTask Load1(Type configType, Dictionary<string, byte[]> configBytes_var)
 			{
 			   await ETTask.CompletedTask;
-				self.LoadOneInThread(configType, configBytes);
+				self.LoadOneInThread(configType, configBytes_var);
 			}
 			List<ETTask> tasks = new List<ETTask>();
 
